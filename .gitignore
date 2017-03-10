@@ -1,0 +1,15 @@
+.vagrant
+.delivery
+# Bundler
+bin/*
+.bundle/*
+
+.kitchen/
+.kitchen.local.yml
+
+pipeline/containers/*/
+vagrant-vms/*/
+jenkins/home/*/
+jenkins/home/cli/*/
+
+*.war
