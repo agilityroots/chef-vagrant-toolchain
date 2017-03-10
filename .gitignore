@@ -9,7 +9,6 @@ bin/*
 
 pipeline/containers/*/
 vagrant-vms/*/
-jenkins/home/*/
 jenkins/home/cli/*/
-
+jenkins/home/*/
 *.war
