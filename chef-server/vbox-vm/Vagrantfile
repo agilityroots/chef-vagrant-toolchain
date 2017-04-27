@@ -15,8 +15,8 @@ service ntp start
 
 # download the Chef server package
 echo "Downloading the Chef server package..."
-if [ ! -f /downloads/chef-server-core_12.13.0_amd64.deb ]; then
-  wget -nv -P /downloads https://packages.chef.io/files/stable/chef-server/12.13.0/ubuntu/14.04/chef-server-core_12.13.0-1_amd64.deb
+if [ ! -f /downloads/chef-server-core_12.14.0-1_amd64.deb ]; then
+  wget -nv -P /downloads https://packages.chef.io/files/stable/chef-server/12.14.0/ubuntu/16.04/chef-server-core_12.14.0-1_amd64.deb
 fi
 
 # install the package
@@ -43,6 +43,11 @@ sudo chef-server-ctl org-create 4thcoffee "Fourth Coffee, Inc." --association_us
 echo "Copying admin key to /vagrant/secrets..."
 mkdir -p /vagrant/secrets
 cp -f /home/vagrant/admin.pem /vagrant/secrets
+
+# install management console
+sudo chef-server-ctl install chef-manage 
+sudo chef-server-ctl reconfigure 
+sudo chef-manage-ctl reconfigure
 
 echo "Your Chef server is ready!"
 EOF
