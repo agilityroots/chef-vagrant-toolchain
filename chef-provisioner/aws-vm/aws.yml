@@ -1,6 +1,6 @@
 keys:
-  access_key_id: AKIAIX6NJ3WYJE2VOLOA
-  secret_access_key: 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
+  access_key_id: <KeyID>
+  secret_access_key: <SecretKey>
 region_id: ap-southeast-1
 ami_id: ami-fe625382
 instance_type: t2.micro
