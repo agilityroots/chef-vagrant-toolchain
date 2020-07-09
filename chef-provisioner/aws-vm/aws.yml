@@ -1,0 +1,12 @@
+keys:
+  access_key_id: AKIAIX6NJ3WYJE2VOLOA
+  secret_access_key: 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
+region_id: ap-southeast-1
+ami_id: ami-fe625382
+instance_type: t2.micro
+keypair_name: vagrant-keypair
+security_groups: vagrant-vms-security-group
+private_key_path: /Users/anadi/.ssh/vagrant-keypair.pem
+box:
+  name: chef-provisioned-demo
+  volume_size: 8

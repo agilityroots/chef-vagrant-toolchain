@@ -12,3 +12,4 @@ vagrant-vms/*/
 jenkins/home/cli/*/
 jenkins/home/*/
 *.war
+*.log
